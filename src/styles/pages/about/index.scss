@@ -1,0 +1,13 @@
+.__about {
+  position: relative;
+  padding-top: 20.8rem;
+  background-color: #f3f6f8;
+  @include media("<phone") {
+    padding-top: 0;
+  }
+}
+
+@import "./hero.scss";
+@import "./company.scss";
+@import "./story.scss";
+@import "./future.scss";

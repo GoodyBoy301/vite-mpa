@@ -1,0 +1,14 @@
+@import "./base/reset";
+@import "./base/base";
+
+@import "./fonts";
+
+@import "./partials/header.scss";
+
+@import "./pages/home";
+@import "./pages/res";
+@import "./pages/about";
+@import "./pages/contact";
+
+@import "./partials/preloader.scss";
+@import "./partials/footer.scss";

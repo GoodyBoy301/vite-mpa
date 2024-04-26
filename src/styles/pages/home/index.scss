@@ -1,0 +1,11 @@
+.__home {
+  position: relative;
+  padding-top: 83rem;
+  background-color: #202020;
+}
+
+@import "./hero.scss";
+@import "./products.scss";
+@import "./how.scss";
+@import "./safety.scss";
+@import "./clientele.scss";

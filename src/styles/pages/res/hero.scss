@@ -1,0 +1,143 @@
+.res__hero {
+  width: 144rem;
+  height: 83.2rem;
+  background: #d8d7dc;
+  padding-top: 21rem;
+  position: fixed;
+  top: 0;
+  @include media("<phone") {
+    width: 39rem;
+    height: 74.6rem;
+    padding-top: 17rem;
+  }
+}
+
+.res__hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(1.5);
+  @include media("<phone") {
+    height: 80%;
+    top: unset;
+    bottom: 0rem;
+  }
+}
+
+.res__hero__head {
+  width: 39.2rem;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin-inline: auto;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  white-space: pre;
+  display: flex;
+  gap: 0.375ch;
+  @include media("<phone") {
+    font-size: 7.2rem;
+    text-align: center;
+    width: 36.4rem;
+    justify-content: center;
+    white-space: unset;
+
+    .line {
+      width: fit-content !important;
+    }
+  }
+}
+
+.res__hero__body {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.29em;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  position: relative;
+  z-index: 1;
+  margin-inline: auto;
+  width: fit-content;
+  margin-top: 1.2rem;
+  opacity: 0;
+  @include media("<phone") {
+    font-size: 1.4rem;
+    width: 34rem;
+    text-align: center;
+    line-height: 2.4rem;
+  }
+}
+
+.res__hero__cta {
+  position: relative;
+  background-color: transparent;
+  padding: 1.4rem 4rem;
+  width: 19.2rem;
+  height: 5rem;
+  border: 0.1rem solid #000000;
+  border-radius: 1.2rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 0.8;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+  margin-top: 2.8rem;
+  transition: background-color 0.1s ease-out;
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.res__hero__footer {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin-top: 38.1rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  // opacity: 0;
+  text-transform: uppercase;
+  @include media("<phone") {
+    width: max-content;
+    position: absolute;
+    justify-content: center;
+    top: min(calc(100svh - 2.4rem - 4.6rem), 69.2rem);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: unset;
+    left: -35.5rem;
+    opacity: 0;
+  }
+
+  span {
+    display: block;
+    transform: scale(0.75);
+  }
+}

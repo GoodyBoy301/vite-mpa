@@ -1,0 +1,104 @@
+.contact__form {
+  width: 144rem;
+  background: #f3f6f8;
+  padding: 16.4rem 36.55rem 21.6rem;
+  position: relative;
+  overflow: hidden;
+  @include media("<phone") {
+    padding: 4.4rem 2.35rem 29.5rem;
+    width: 100vw;
+  }
+}
+
+.contact__form__form {
+  display: grid;
+  @include media("<phone") {
+    width: 100%;
+  }
+
+  label {
+    margin-top: 5.2rem;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+
+  input {
+    display: flex;
+    padding: 1rem;
+    width: 70.9rem;
+    height: 7.6rem;
+    border: unset;
+    background-color: transparent;
+    border-bottom: 0.07rem solid #000000;
+    outline: unset !important;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 0.8;
+    letter-spacing: -0.03em;
+    color: #000000;
+    @include media("<phone") {
+      width: 100%;
+    }
+
+    ::placeholder {
+      color: #7e7e7e;
+    }
+  }
+
+  textarea {
+    width: 70.9rem;
+    height: 7.6rem;
+    overflow: scroll;
+    border: unset;
+    background-color: transparent;
+    border-bottom: 0.07rem solid #000000;
+    outline: unset !important;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    resize: none;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    color: #000000;
+    @include media("<phone") {
+      margin-top: 1.29rem;
+      width: 100%;
+    }
+  }
+
+  button {
+    display: grid;
+    place-content: center;
+    margin-top: 5.2rem;
+    background-color: transparent;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    width: 70.9rem;
+    height: 5rem;
+    border: 0.1rem solid #000000;
+    border-radius: 1.2rem;
+    transition: background-color 0.1s ease-out;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    @include media("<phone") {
+      width: 100%;
+    }
+  }
+}

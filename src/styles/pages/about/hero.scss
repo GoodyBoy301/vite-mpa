@@ -1,0 +1,77 @@
+.about__hero {
+  width: 144rem;
+  position: fixed;
+  padding-bottom: 9.9rem;
+  @include media("<phone") {
+    width: 39rem;
+    padding-top: 52.6rem;
+    padding-bottom: 2.4rem;
+    overflow: hidden;
+    top: 0;
+  }
+}
+
+.about__hero__bg {
+  position: absolute;
+  top: 20.1rem;
+  height: 84.3rem;
+  left: 0;
+  transform-origin: 50% 100%;
+  opacity: 0;
+  @include media("<phone") {
+    top: 0rem;
+  }
+}
+
+.about__hero__intro {
+  position: relative;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.29em;
+  color: #bbbbbb;
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.about__hero__body {
+  width: 70.4rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 1.6rem auto 0;
+  position: relative;
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.about__hero__footer {
+  width: 103.4rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  position: relative;
+  margin: 54.9rem auto 0;
+  @include media("<phone") {
+    margin-top: 0;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 35.7rem;
+    opacity: 1;
+  }
+}

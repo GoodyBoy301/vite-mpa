@@ -1,0 +1,105 @@
+.about__story {
+  width: 144rem;
+  padding: 10.4rem 0rem 121.1rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #f3f6f8;
+  margin-top: -0.1rem;
+  @include media("<phone") {
+    padding: 16rem 0rem 84.5rem;
+    width: 100vw;
+  }
+}
+
+.about__story__wrapper {
+  background-color: #f3f6f8;
+}
+
+.about__story__intro {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.29em;
+  color: #bbbbbb;
+}
+
+.about__story__head {
+  margin: 1.3rem auto 0;
+  width: 107.3rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  @include media("<phone") {
+    margin-top: 3rem;
+    width: 35.8rem;
+    font-size: 2.4rem;
+  }
+}
+
+.about__story__media {
+  position: absolute;
+  border-radius: 1.5rem;
+  @include media("<phone") {
+    border-radius: 1.05rem;
+  }
+
+  &:nth-of-type(1) {
+    width: 34.138rem;
+    height: 51.2rem;
+    left: -27rem;
+    top: 46.9rem;
+    @include media("<phone") {
+      width: 23.9rem;
+      height: 35.8rem;
+      top: 67.2rem;
+      left: -48.4rem;
+    }
+  }
+
+  &:nth-of-type(2) {
+    width: 52.1rem;
+    height: 54.5rem;
+    left: 10.3rem;
+    top: 54rem;
+    @include media("<phone") {
+      width: 36.47rem;
+      height: 38.15rem;
+      top: 72.17rem;
+      left: -22.3rem;
+    }
+  }
+
+  &:nth-of-type(3) {
+    width: 52.2rem;
+    height: 68.5rem;
+    left: 65.6rem;
+    top: 69.1rem;
+    @include media("<phone") {
+      width: 36.54rem;
+      height: 47.95rem;
+      top: 82.74rem;
+      left: 16.42rem;
+    }
+  }
+
+  &:nth-of-type(4) {
+    width: 37.875rem;
+    height: 51.2rem;
+    left: 121rem;
+    top: 57.3rem;
+    @include media("<phone") {
+      width: 26.513rem;
+      height: 35.84rem;
+      top: 78.48rem;
+      left: 55.2rem;
+    }
+  }
+}

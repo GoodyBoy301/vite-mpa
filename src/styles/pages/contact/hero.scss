@@ -1,0 +1,83 @@
+.contact__hero {
+  width: 144rem;
+  height: 65.1rem;
+  background: #d8d7dc;
+  padding: 26.6rem 7.2rem 16.9rem 10.8rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  display: flex;
+
+  * {
+    position: relative;
+  }
+
+  @include media("<phone") {
+    width: 39rem;
+    padding: 12.7rem 0 2.8rem 3.4rem;
+    flex-direction: column;
+  }
+}
+
+.contact__hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include media("<phone") {
+    height: 100%;
+    top: 0;
+    object-position: 0% 50%;
+  }
+}
+
+.contact__hero__head {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  @include media("<phone") {
+    font-size: 4.8rem;
+  }
+}
+
+.contact__hero__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  width: 45rem;
+  @include media("<phone") {
+    width: 26.7rem;
+    margin-left: auto;
+  }
+
+  li {
+    display: flex;
+    gap: 1.2rem;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    @include media("<phone") {
+      gap: 1.2rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  img {
+    width: 3.8rem;
+    height: 3.8rem;
+    @include media("<phone") {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-top: 0.5rem;
+    }
+  }
+}

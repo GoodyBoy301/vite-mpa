@@ -1,0 +1,13 @@
+.__res {
+  position: relative;
+  padding-top: 83.2rem;
+  background-color: #202020;
+  @include media("<phone") {
+    padding-top: 74.6rem;
+  }
+}
+
+@import "./hero.scss";
+@import "./about.scss";
+@import "./discover.scss";
+@import "./services.scss";

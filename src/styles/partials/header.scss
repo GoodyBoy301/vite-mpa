@@ -1,0 +1,214 @@
+header {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 1.6rem;
+  margin-inline: auto;
+  opacity: 0;
+  filter: invert(0);
+  // mix-blend-mode: exclusion;
+  transition: filter 0.5s ease-out;
+  @include media("<phone") {
+    top: 0;
+  }
+}
+
+html:has(.__res) header,
+html:has(.__about) header {
+  filter: invert(1) !important;
+}
+
+.header__nav {
+  width: 138.1rem;
+  margin-inline: auto;
+  display: flex;
+  padding: 2rem 4rem;
+  align-items: center;
+  justify-content: flex-end;
+  @include media("<phone") {
+    padding-inline: 2.4rem;
+    width: 39rem;
+    margin-inline: 0;
+  }
+}
+
+.header__nav__home {
+  width: 9.2rem;
+  height: 2.9rem;
+  position: absolute;
+  top: 2.1rem;
+  left: 4rem;
+  @include media("<phone") {
+    top: 3rem;
+  }
+}
+
+.header__nav__open {
+  width: 25rem;
+  height: 4.4rem;
+  background: #ffffff;
+  border-radius: 3.2rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 0.8;
+  letter-spacing: -0.02em;
+  color: #010101;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.2rem 3rem;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    padding-right: 2rem;
+  }
+  @include media("<phone") {
+    width: 17rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+}
+
+.header__nav__close {
+  transform-origin: 100% 0%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 2.2rem 2rem;
+  gap: 0.4rem;
+  width: 25rem;
+  height: 4.4rem;
+  background: #ffffff;
+  border-radius: 3.2rem;
+  position: absolute;
+  color: #010101;
+  right: 6.95rem;
+  top: 2rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 0.8;
+  --opacity: 0;
+  @include media("<phone") {
+    right: 2.3rem;
+    width: 17rem;
+    height: 4rem;
+    padding: 2rem;
+    border-radius: 2.2rem;
+  }
+
+  em {
+    display: flex;
+    align-items: center;
+    line-height: 0.8;
+    cursor: pointer;
+    gap: 0.4rem;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: -2rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem);
+    z-index: -1;
+    opacity: var(--opacity);
+    pointer-events: none;
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    // top: 0.45rem;
+    position: relative;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7rem;
+    bottom: 7rem;
+    left: 4rem;
+    right: 4rem;
+    gap: 2.2rem;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 0;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #000000;
+    @include media("<phone") {
+      gap: 0;
+    }
+
+    a {
+      height: 10.2rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      @include media("<phone") {
+        transform: scale(0.7);
+        margin-top: -2rem;
+      }
+      * {
+        pointer-events: none;
+      }
+      &:hover img {
+        transform: scale(1);
+        display: inline;
+        height: 6.5rem;
+      }
+      &:hover i {
+        width: 0em;
+        height: 0rem;
+        opacity: 0;
+      }
+      &:hover span {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      transition: 0.5s ease;
+    }
+
+    img {
+      width: auto;
+      transform: scale(0);
+      height: 0rem;
+      transition: 0.5s ease;
+      position: relative;
+      bottom: 1rem;
+      position: relative;
+      top: -0.6rem;
+    }
+
+    i {
+      display: grid;
+      place-content: center;
+      transition: 0.5s ease;
+      width: 0.4em;
+      height: 10rem;
+      overflow: hidden;
+      opacity: 1;
+      &[null] {
+        width: 0.2em;
+      }
+    }
+  }
+}

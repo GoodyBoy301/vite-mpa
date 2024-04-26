@@ -1,0 +1,10 @@
+.__contact {
+  position: relative;
+  padding-top: 65.1rem;
+  background-color: #202020;
+  @include media("<phone") {
+  }
+}
+
+@import "./hero.scss";
+@import "./form.scss";

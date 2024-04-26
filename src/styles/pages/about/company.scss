@@ -1,0 +1,201 @@
+.about__company {
+  width: 144rem;
+  margin-top: 120rem;
+  padding: 4.3rem 7.2rem 0;
+  background-color: inherit;
+  position: relative;
+  overflow: hidden;
+  @include media("<phone") {
+    padding: 5rem 1.6rem 0;
+    width: 100vw;
+    margin-top: 74.1rem;
+  }
+
+  .res__about__list {
+    display: flex;
+    margin-top: 0;
+    @include media("<phone") {
+      overflow: scroll;
+      width: 100vw;
+      justify-content: flex-start;
+    }
+
+    li {
+      padding: 6.15rem 3.5rem;
+    }
+
+    li:first-of-type {
+      padding-left: unset;
+    }
+
+    li:last-of-type {
+      padding-right: unset;
+      @include media("<phone") {
+        padding-right: 9rem;
+      }
+    }
+  }
+}
+
+.about__company__header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  @include media("<phone") {
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  h3 {
+    width: 38.5rem;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.6rem;
+    line-height: 104%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    white-space: nowrap;
+    @include media("<phone") {
+      width: unset;
+      font-size: 4.8rem;
+    }
+  }
+
+  p {
+    width: 63.3rem;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 175%;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin-top: 10rem;
+    @include media("<phone") {
+      margin-top: 6.2rem;
+      width: unset;
+      font-size: 2rem;
+      line-height: 4.4rem;
+      text-align: center;
+    }
+  }
+}
+
+.about__company__head {
+  position: absolute;
+  width: 85.3rem;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ebebeb;
+  top: 97.7rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  @include media("<phone") {
+    width: fit-content;
+    white-space: nowrap;
+    right: -1.85rem;
+    left: -1.85rem;
+    font-size: 10rem;
+    top: 67rem;
+  }
+}
+
+.about__company__body {
+  width: 64.8rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-top: 55.7rem;
+  position: relative;
+  margin-inline: auto;
+  @include media("<phone") {
+    width: 29rem;
+    font-size: 1.4rem;
+    line-height: 3.6rem;
+    margin-top: 15.5rem;
+    z-index: 2;
+  }
+}
+
+.about__company__footer {
+  width: 48.1rem;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 12.8rem;
+  margin-inline: auto;
+  position: relative;
+  padding-bottom: 24.5rem;
+  @include media("<phone") {
+    width: 31.7rem;
+    margin-top: 27.9rem;
+    text-align: left;
+    padding-bottom: 10rem;
+    margin-left: unset;
+  }
+}
+
+.about__company__media {
+  position: absolute;
+  width: 21.45rem;
+  height: 25.1rem;
+  @include media("<phone") {
+    width: 15.015rem;
+    height: 17.57rem;
+    border-radius: 1.085rem;
+    z-index: 30;
+  }
+
+  &:nth-of-type(1) {
+    top: 64.6rem;
+    left: 11.8rem;
+    @include media("<phone") {
+      top: 112rem;
+      left: 1rem;
+    }
+  }
+
+  &:nth-of-type(2) {
+    top: 64.6rem;
+    right: 28.15rem;
+    @include media("<phone") {
+      top: 83rem;
+      right: 2rem;
+    }
+  }
+
+  &:nth-of-type(3) {
+    top: 121.3rem;
+    left: 21.3rem;
+    @include media("<phone") {
+      top: 124rem;
+      left: 20rem;
+    }
+  }
+
+  &:nth-of-type(4) {
+    top: 103.1rem;
+    right: 12.45rem;
+    @include media("<phone") {
+      top: 161rem;
+      right: 16rem;
+    }
+  }
+}
